@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#152238"
+    tools:context=".CallActivity">
+
+    <!-- Username Text -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="User Nane"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Circle Profile Image -->
+
+
+    <!-- Bottom Control Buttons -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/dialer_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Buttons for Camera, Speaker, Mute, and End Call -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/camera_media_video_icon"
+            android:layout_marginEnd="23dp"
+            android:padding="8dp"
+            android:background="@drawable/circle_background_for_call_activity"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sound_speaker_icon"
+            android:layout_marginEnd="23dp"
+            android:padding="8dp"
+            android:background="@drawable/circle_background_for_call_activity"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_mic_off_24"
+            android:layout_marginEnd="23dp"
+            android:padding="8dp"
+            android:background="@drawable/circle_background_for_call_activity"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/endCallButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/call_end_background"
+            android:padding="8dp"
+            android:src="@drawable/baseline_call_end_24"
+            android:backgroundTint="@color/red"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

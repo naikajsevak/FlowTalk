@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/chat_icon"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif"
+            android:text="Welcome To FlowTalk"
+            android:textSize="34sp"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"
+          />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/username_icon"
+            android:drawablePadding="22dp"
+            android:hint="User Name"
+            android:inputType="text"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/email_icon"
+            android:drawablePadding="22dp"
+            android:hint="abc@gmail.com"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+           />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/password_icon"
+            android:drawableEnd="@drawable/ic_visibility_off"
+            android:drawablePadding="22dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+           />
+
+        <TextView
+            android:id="@+id/already"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="end"
+            android:text="already have account"
+            android:textSize="15sp"
+           />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#DE3161"
+            android:padding="15dp"
+            android:text="Register"
+            android:textSize="19sp"
+           />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif"
+            android:text="Or Register With!"
+            android:textSize="17sp"
+            android:textStyle="bold"
+           />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+           >
+
+            <ImageView
+                android:id="@+id/google"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:src="@drawable/google"
+                />
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="32dp"
+                android:src="@drawable/facebook_social_icon"
+               />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

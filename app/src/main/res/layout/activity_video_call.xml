@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoCallActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/local_user"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp"
+            android:background="#c1c1c1"
+            />
+        <FrameLayout
+            android:id="@+id/remote_user"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/local_user"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp"
+            android:background="#c1c1c1"
+            />
+        <Button
+            android:id="@+id/join_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Call"
+            android:layout_below="@id/remote_user"
+            android:layout_alignStart="@id/remote_user"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/leave_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Call"
+            android:layout_below="@id/remote_user"
+            android:layout_alignEnd="@id/remote_user"
+            android:textAllCaps="false"
+            />
+    </RelativeLayout>
+
+</ScrollView>

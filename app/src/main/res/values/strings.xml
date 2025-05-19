@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FlowTalk</string>
+    <string name="cancel">cancel</string>
+    <string name="delete_for_me">delete for me</string>
+    <string name="delete_for_everyone">delete for everyone</string>
+    <string name="calls">Calls</string>
+    <string name="status">Status</string>
+    <string name="chats">chats</string>
+    <string name="google">\n</string>
+    <string name="sign_in_with_phone" />
+    <string name="facebook">\n\n</string>
+    <string name="click_for_sign_up">\nclick for sign up</string>
+    <string name="default_web_client_id">502008313644-t81kocd669g7pppjbrup6mf2kjhb3gs4.apps.googleusercontent.com</string>
+    <string name="chat_room">Chat Room</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="AppChannelName">"myUniqueChannel"</string>
+    <string name="AppToken">007eJxTYAia/v3fwjMvTmz9pLp7x5+Xxx63PVtx5iHDLrfuept/ShNDFBiSLY1STFJTjc1T0kxMLExTEo2NTZLNLE1MjExTgVzzmb0B6Q2BjAyvMjMZGRkgEMTnZ8itDM3LLCxNdc5IzMtLzWFgAADTryki</string>
+    <string name="app_id">c92d4ee37df4485da334c694425e85d7</string>
+    <string name="do_you_want_to_delete_this_chats">Do you want to delete this chats?</string>
+    <string name="yes">Yes</string>
+    <string name="json_key"></string>
+    <string name="google_api_key">AIzaSyC9uurWCX4W7F38hIYAlOq9qs1Iv3pUEsw</string>
+    <string name="no">No</string>
+</resources>
